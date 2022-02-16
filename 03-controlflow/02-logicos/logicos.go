@@ -7,10 +7,10 @@ func main() {
 	fmt.Println(!true)
 
 	//and
-	fmt.Println(true && true)
+	//fmt.Println(true && true)
 	fmt.Println(true && false)
 
 	//Or
 	fmt.Println(true || false)
-	fmt.Println(false || false)
+	//fmt.Println(false || false)
 }
