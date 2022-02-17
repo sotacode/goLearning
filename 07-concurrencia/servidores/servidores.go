@@ -26,7 +26,7 @@ func main() {
 	}
 	inicio := time.Now()
 	for _, servidor := range servidores {
-		revisarServidor(servidor)
+		go revisarServidor(servidor)
 	}
 	diffTime := time.Since(inicio)
 	fmt.Println("Tiempo de ejecucion:", diffTime)
