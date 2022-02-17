@@ -1,0 +1,3 @@
+Este contenido esta en el fichero hola.txt
+esta es la segunda linea
+y esta la tercera
