@@ -36,3 +36,46 @@ func TestSuma(t *testing.T) {
 		}
 	}
 }
+
+func TestGetMax(t *testing.T) {
+	tabla := []struct {
+		a int
+		b int
+		c int
+	}{
+		{67, 25, 67},
+		{9, 3, 9},
+		{24, 43, 43},
+	}
+
+	for _, item := range tabla {
+		max := GetMax(item.a, item.b)
+
+		if max != item.c {
+			t.Errorf("La suma no es correcta")
+		} else {
+			fmt.Println("Suma realizada correctamente")
+		}
+	}
+}
+
+func TestFibo(t *testing.T) {
+	tabla := []struct {
+		n int
+		r int
+	}{
+		{1, 1},
+		{8, 21},
+		{50, 12586269025},
+	}
+
+	for _, item := range tabla {
+		fibo := Fibonacci(item.n)
+
+		if fibo != item.r {
+			t.Errorf("La suma no es correcta")
+		} else {
+			fmt.Println("Suma realizada correctamente")
+		}
+	}
+}
